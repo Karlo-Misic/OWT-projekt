@@ -1,0 +1,26 @@
+@media screen and (max-width: 800px){
+  table td:nth-child(n+3), /* Sakrivanje od 3. stupca pa nadalje */
+  table th:nth-child(n+3) {
+      display: none;
+  }
+}
+@media print{
+    body > *:not(table){
+      display: none !important; /* Sakrivanje svih elemenata koji se nalaze u body a da nisu tablica */
+    }
+}
+.iluzija{
+  width: 1vw;
+  height: 20vw;
+  background-color: #29d9dc;
+  position: relative;
+  animation: iluzija-animacija 2s infinite alternate;
+}
+@keyframes iluzija-animacija{
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(98vw);
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karlo Mišić">
+    <meta name="keywords" content="Forma, online, izlozba, popust, muzej, ilizija">
+    <title>Obrazac izložba</title>
+    <link rel="icon" href="./../../resursi/slike/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/kmisic22.css">
+    <link rel="stylesheet" href="../../css/dokumentacija.css">
+    <!-- <script src="../../js/klijent/kmisic22_obrazac.js" defer></script> -->
+</head>
+<body>
+    <header>
+        <h1>Obrazac izložba</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a class="muzej" href="../../index.html">
+                    <img id="logo" src="../../resursi/slike/logo.jpg" alt="logo">
+                </a>
+            </li>
+            <li><a href="../index.html">Početna</a></li>
+            <li><a href="../oAutoru.html">O Autoru</a></li>
+            <li><a href="obrasci.html">Obrazac validacija</a></li>
+            <li><a style="color: red;" href="obrazacIzlozba.html">Obrazac izložba</a></li>
+            <li><a href="galerijaSlika.html#pozicioniranje">Galerija slika</a></li>
+            <li><a href="tablica.html#naslov_tablice">Tablica</a></li>
+            <li><a href="popisCssDatoteka.html">Popis CSS datoteka</a></li>
+            <li><a href="../clanci/clanak1.html">Članak 1</a></li>
+            <li><a href="../clanci/clanak2.html">Članak 2</a></li>
+            <li><a href="../clanci/clanak3.html">Članak 3</a></li>
+            <li><a href="../dokumentacija.html">Dokumentacija</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div id="forma">
+        <form action="/owt/izlozba" method="POST" novalidate>
+            <label for="naziv_iluzije">Naziv iluzije:</label>
+            <input type="text" name="naziv_iluzije" id="naziv_iluzije" placeholder="Unesite naziv iluzije" size="25" maxlength="20" required autofocus> <!--Restrikcija 1.size, 2.maxlenght, 3.required, 4.autofocus-->
+            <br>
+            <label for="lokacija">Naziv iluzije:</label>
+            <input type="text" name="lokacija" id="lokacija" placeholder="Unesite lokaciju" size="25" maxlength="20" required>
+            <br>
+<!--element za unos datuma i element za brojčani unos-->
+            <label for="datum_ugradnje">Datum ugradnje:</label>
+            <input type="date" id="datum_ugradnje">
+            <br>
+            <label for="kategorija">Kategorija:</label>
+            <input list="kategorija" name="kategorija">
+            <datalist id="kategorija">
+                <option value="Percepcijska iluzija">
+                <option value="Levitacija">
+                <option value="Vrtanja i ravnoteža">
+                <option value="Optička iluzija">
+            </datalist>
+            <br>
+            <button type="submit">Potvrdi</button>
+            <button type="reset">Odustani</button>
+        </form>
+        <p>Molimo ispunite formu do kraja!</p>
+    </div>
+    <br>
+    <footer class="footer">
+        <p>
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en"><img id="CC-BY-NC" src="../../resursi/slike/CC-BY-NC.PNG" alt="CC-BY-NC-4.0"></a>
+            <span>&copy; 2024 Karlo Mišić Sva prava pridržana.</span>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2024%2Fzadaca_01%2Fkmisic22%2Fkmisic22%2Fhtml%2FostaloHtml%2Fobrasci.html">
+                <img id="html5" src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="Ikona validatora HTML5">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

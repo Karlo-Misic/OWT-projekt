@@ -1,0 +1,283 @@
+                                                                                /* index */
+*{
+    font-size: 18px;
+}
+body{
+    text-align: center;
+    word-break: break-all;
+    margin: 0;
+}
+/* Eksplicitno */
+.stupac{
+    text-align: left;
+    display: inline-block;
+    padding: 5px;
+}
+.red::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.bojateksta{
+    color: #00aaac;
+    text-decoration: none;
+    font-weight: 700;
+}
+p > a:hover{
+    font-size: 19px;
+    color: black;
+}
+#logo{
+    position: relative;
+    max-width: 100px;
+    border-radius: 50%;
+    left: -2%;
+    overflow: hidden;
+}
+ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin: 20px;
+}
+ul,li{
+    display: inline-block;
+    font-size: 25px;
+}
+iframe{
+    margin: auto;
+    width: 70%;
+}
+#html5{
+    margin:auto;
+    width: 3%;
+}
+#CC-BY-NC{
+    width: 7%;
+    height: 17%;
+    margin: auto;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    background-color:#00aaac;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10%;
+}
+nav ul li:hover a{
+    color: black;
+    font-size: 25px;
+}
+                                                                                 /* oAutoru */
+#linija1, #linija2, #linija3, #linija4{
+    height: 15px;
+    font-size: 13px ;
+    background-color: #00aaac;
+    color: white;
+    margin-bottom: 0%;
+    margin-left: 5%;
+}
+#linija1{
+    width: 70%; 
+    font-size: 1px;
+}
+#linija2{
+    width: 60%;
+    margin-left: -5%;  
+}
+#linija3{
+    width: 70%;
+    font-size: 1px; 
+}
+#linija4{
+    width: 45%;
+    margin-left: -20%;
+}
+#tekst1{
+    position: relative;
+    font-size: 35px;
+    font-family: Bahnschrift;
+    margin-left: 14%;
+    margin-bottom: 0.5%;
+    font-weight: 900;
+}
+.autor{
+    position: relative;
+    margin: 0%;
+    color: black;
+    display:list-item;
+}
+footer{
+    background-color: #00aaac;
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    left: 0%;
+    box-sizing: border-box; 
+    height: 100px;
+}
+.footer{
+    background-color: #00aaac;
+    position: relative;
+    bottom: 0%;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    left: 0%;
+    box-sizing: border-box;
+}
+                                                                        /* Obrasci */
+header > h1{
+    color: #00aaac;
+    font-size: 35px;
+}
+li + li{
+    margin-left: 20px;
+}
+#error-summary{
+    color: #00aaac;
+}
+form + p{
+    color: #00aaac;
+}
+h1{
+    text-align: center;
+}
+/* Model kutije minimalno na 3 mjesta */
+input, select, textarea{
+    margin: 1%;
+    box-sizing: border-box;
+}
+#forma{
+    border-style: solid;
+    margin: auto;
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+button{
+    color: white;
+    margin: 2% auto;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #00aaac;
+}
+button:hover{
+    cursor: pointer;
+}
+textarea{
+    width: calc(90% - 6px);
+    height: 100px;
+}
+form{
+    text-align: left;
+}
+input:focus {
+    background-color: #00aaac;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+.input-error {
+    border: 1px solid red;
+}
+.error-label {
+    color: red; /* Postavljanje crvene boje teksta za labele koje označavaju pogrešno popunjena polja */
+    font-weight: bold; /* Dodavanje podebljanja za bolju vidljivost */
+}
+                                                                        /* Galerija slika */
+figure{
+    display: inline-block;
+    text-align: center;
+}
+#slika1, #slika2, #slika3, #slika4, #slika5, #slika6, #slika7, #slika8, #slika9, #slika10 {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+#slika1:hover, #slika2:hover, #slika3:hover, #slika4:hover, #slika5:hover, #slika6:hover, #slika7:hover, #slika8:hover, #slika9:hover, #slika10:hover{
+    transform: scale(1.1);
+}
+@media (min-width: 1024px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+    }
+}
+                                                                        /* Tablica */
+table{
+    font-size: 10px !important;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+table, td, th{
+    border-style: solid;
+    word-break: break-all;
+}
+.red::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+                                                                        /* Popis CSS datoteka */
+main div > h2{
+    font-size: 20px;
+}
+                                                                        /* clanci */
+#zaglavlje{
+    word-break: break-all;
+    width: 98%;
+    margin: 1%;
+    width: 22%;
+    font-weight: 900;
+}
+#division_tekst{
+    border-style: solid;
+    margin: auto;
+    width: 50%;
+}
+#tekst{
+    word-break: break-all;
+    position: relative;
+    border-style: dashed;
+    font-weight: bold;
+    width: 40%;
+    margin-left: 59%;
+    margin-top: -6%;
+    margin-bottom: 2%;
+}
+                                                                        /* Dokumentacija */
+.boja{
+    background-color: white;
+    color:black;
+}
+#logo1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 1%;
+    top: 45px;
+}
+#navigacija{
+    padding: 30px;
+    color: #343a40;
+    border-radius: 0%;
+    color: #00aaac;
+}
+.list-group-item:first-child{
+    margin-left: 20px;
+}
